@@ -131,8 +131,64 @@ public class LinkedList
              
          }
          
+         /**
+         * Adds an element before the iterator position
+         * and moves the iterator past the inserted element
+         * @param element the element to add
+         */
+        public void add(Object element)
+        {
+            if (position == null)
+            {
+                addFirst(element);
+                position = first;
+                
+                
+            }
+            else
+            {
+                Node newNode = new Node();
+                newNode.data = element;
+                newNode.next = position.next;
+                position.next = newNode;
+                position = newNode;
+                
+                
+            }
+            
+            isAfterNext = false;
+            
+            
+        }
+        
+        /**
+        * Removes the last traversed element. This method may
+        * ony be called after a call to the next method.
+        */
+    
+       public void remove()
+       {
+           if(!isAfterNext){throw new IllegalStateException();}
+               
+           if (position == first)
+           {
+               removeFirst();
+               
+           }
+           
+           else
+           {
+              previous.next = position.next; 
+               
+           }
+           position = previous;
+           isAfterNext = false;
+           
+                      
+       }
          
-     }
+         
+    }
     
 
     

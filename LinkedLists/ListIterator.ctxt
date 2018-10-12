@@ -1,8 +1,14 @@
 #BlueJ class context
 comment0.params=
 comment0.target=java.lang.Object\ next()
-comment0.text=\r\nMoves\ the\ iterator\ past\ the\ next\ element\r\n\ \r\n\ @return\ \ the\ traversed\ elemtnt\r\n
+comment0.text=\r\nMoves\ the\ iterator\ past\ the\ next\ element\r\n\ \r\n\ @return\ \ the\ traversed\ element\r\n
 comment1.params=
 comment1.target=boolean\ hasNext()
 comment1.text=\r\n\ Tests\ if\ there\ is\ an\ element\ after\ the\ interator\ position\r\n\ @retrun\ true\ if\ there\ is\ an\ eleent\ after\ the\ iterator\ position\r\n
-numComments=2
+comment2.params=element
+comment2.target=void\ add(java.lang.Object)
+comment2.text=\r\n\ Adds\ an\ element\ before\ the\ iterator\ position\r\n\ and\ moves\ the\ iterator\ past\ the\ inserted\ element\r\n\ @param\ element\ the\ element\ to\ add\r\n
+comment3.params=
+comment3.target=void\ remove()
+comment3.text=\r\n\ Removes\ the\ last\ traversed\ element.\ This\ method\ may\r\n\ ony\ be\ called\ after\ a\ call\ to\ the\ next\ method.\r\n
+numComments=4

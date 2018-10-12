@@ -10,7 +10,7 @@ public interface ListIterator
     /**
      *Moves the iterator past the next element
      * 
-     * @return  the traversed elemtnt
+     * @return  the traversed element
      */
     Object next();
     /**
@@ -19,4 +19,27 @@ public interface ListIterator
      */
     
     boolean hasNext();
+    
+    /**
+     * Adds an element before the iterator position
+     * and moves the iterator past the inserted element
+     * @param element the element to add
+     */
+    
+    void add(Object element);
+    
+    /**
+     * Removes the last traversed element. This method may
+     * ony be called after a call to the next method.
+     */
+    
+    void remove();
+    
+    
+    
+    
+    
+    
+    
+    
 }
